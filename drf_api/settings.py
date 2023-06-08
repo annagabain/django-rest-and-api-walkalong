@@ -67,6 +67,8 @@ ALLOWED_HOSTS = [
     # 'django-rest-api-walkalong.herokuapp.com',
     os.environ.get('ALLOWED_HOST'),
     '8000-annagabain-djangorestan-gfqcw8zlr07.ws-eu97.gitpod.io',
+    'https://3000-annagabain-reactmoments-bns05u13pef.ws-eu99.gitpod.io/',
+    'http://localhost:3000',
     'localhost',
     'django-rest-api-walkalong.herokuapp.com'
 ]
@@ -121,7 +123,7 @@ MIDDLEWARE = [
 #         r"^https://.*\.gitpod\.io$",
 #     ]
 if 'CLIENT_ORIGIN_DEV' in os.environ:
-    extracted_url = re.match(r'^.+-', os.environ.get('CLIENT_ORIGIN_DEV', ''), re.IGNORECASE).group(0)
+    extracted_url = re.match(r'^.+-', os.environ.get('CLIENT_ORIGIN_DEV', ''), re.IGNORECASE).group(0)  # noqa
     CORS_ALLOWED_ORIGIN_REGEXES = [
         rf"{extracted_url}(eu|us)\d+\w\.gitpod\.io$",
     ]
