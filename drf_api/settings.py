@@ -70,7 +70,8 @@ ALLOWED_HOSTS = [
     'https://3000-annagabain-reactmoments-bns05u13pef.ws-eu99.gitpod.io/',
     'http://localhost:3000',
     'localhost',
-    'django-rest-api-walkalong.herokuapp.com'
+    'django-rest-api-walkalong.herokuapp.com',
+    'react-moments-code-along.herokuapp.com/',
 ]
 
 
