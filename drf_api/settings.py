@@ -130,7 +130,9 @@ if 'CLIENT_ORIGIN_DEV' in os.environ:
     ]
 
 CORS_ALLOWED_ORIGINS = [
-    'https://react-moments-code-along.herokuapp.com/',
+    # 'https://react-moments-code-along.herokuapp.com/',
+    '*',
+
     # Add any other allowed origins or '*' for all origins
 ]
 
